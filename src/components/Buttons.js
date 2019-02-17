@@ -11,7 +11,7 @@ const Button = (props) => {
     <button onClick = {props.addVoteDeal}>DEAL</button>{' '}
     <button onClick = {props.addVoteDeal}>NO DEAL</button>{' '}
     <button onClick = {props.addVoteDeal}>NO BREXIT</button>
-    <h3>{props.voteDeal === null ? 'Reveal Your Future' : <VoteResult
+    <h3>{props.voteDeal === null ? 'Reveal UK Future' : <VoteResult
     voteDeal = {props.voteDeal}/>}</h3>
     </div>
   )
