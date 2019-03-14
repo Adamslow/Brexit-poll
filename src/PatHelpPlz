@@ -1,0 +1,31 @@
+function App() {
+  const [options, setOptions] = useState([
+    {
+      id: 1,
+      name: 'DEAL',
+      votes: 0
+    },
+    {
+      id: 2,
+      name: 'NO DEAL',
+      votes: 0
+    },
+    {
+      id: 3,
+      name: 'NO BREXIT',
+      votes: 0
+    },
+    
+  ])
+  
+ let handleEvent = (optionId) => {
+  const options = () => options.map(option => {
+      if (option.id === optionId) {
+        return Object.assign({}, option, {
+          votes: option.votes + 1
+        });
+      } else {
+        return option;
+      }
+    });
+  
